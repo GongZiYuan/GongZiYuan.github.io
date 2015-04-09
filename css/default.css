@@ -17,3 +17,16 @@
 #copyright{margin-top:10px;text-align:center;width:100%;color:#666}
 #errorMsg{width:100%;text-align:center;font-size:24px;position:absolute;top:100px;left:0}
 #copyright a{color:#666}
+#wrap {
+ display:block;
+ top:70px;
+ left:570px;
+ position:absolute;
+ border:1px solid #fff;
+ text-align:center;
+
+-webkit-border-radius:60px; 
+-moz-border-radius: 60px; 
+border-radius: 60px; 
+
+ }
