@@ -1,118 +1,194 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>亲爱的剑虹，生日快乐！</title>
-<!--引入开始-->
-<style type="text/css">
-@font-face {
-	font-family: digit;
-	src: url('digital-7_mono.ttf') format("truetype");
-}
-</style>
-<link href="css/default.css" type="text/css" rel="stylesheet">
-<script type="text/javascript" src="http://www.5imoban.net/download/jquery/jquery-1.8.3.min.js"></script>
-<script type="text/javascript" src="js/garden.js"></script>
-<script type="text/javascript" src="js/functions.js"></script>
-<!--引入结束-->
-<style>
-body{margin:0; padding:0;}
-ul#wimoban_nav{padding-left:50px; margin-bottom:10px; border-bottom:2px solid #ccc; overflow:hidden; _zoom:1;}
-ul#wimoban_nav li{float:left; display:inline; margin:10px;}
-ul#wimoban_nav li a{display:block; font-size:16px;}
-ul#wimoban_nav li a,#wimoban_p,#wimoban_p a{color:#000; font-family:"微软雅黑";}
-ul#wimoban_nav li a:hover,#wimoban_p a:hover{color:red;}
-#wimoban_p{text-align:center; font-size:14px; clear:both;}
-</style>
-</head>	
-<body oncontextmenu='return false' ondragstart='return false'>
-<!-- 代码开始 -->
-<embed  loop="true" src="kn.mp3" width = "0" height = "0"></embed>
-
-<div id="mainDiv">
-	<div id="content">
-		<div id="code">
-			<span class="comments">/**</span><br />
-			<span class="space"/><span class="comments">*2013—04-03,afternoon</span><br />
-			<span class="space"/><span class="comments">*The first day they met.</span><br />
-			<span class="space"/><span class="comments">*/</span><br />
-			Boy name = <span class="keyword">Mr</span> Zhao<br />
-			Girl name = <span class="keyword">Mrs</span> Yan<br />
-			<span class="comments">//Then fall in love river. </span><br />
-			The boy love the girl;<br />
-			<span class="comments">// They love each other.</span><br />
-			The girl loved the boy;<br />
-			<span class="comments">// As time goes on.</span><br />
-			The boy can not be separated the girl;<br />
-			<span class="comments">// At the same time.</span><br />
-			The girl can not be separated the boy;<br />
-			<span class="comments">// Although sometimes they quarrel, but they are still together.</span><br />
-			<span class="comments">// they will be together forever.</span><br />
-			<span class="keyword">Now,the boy</span> very <span class="keyword">happy</span>;<br />
-			<span class="keyword">The girl</span> is also very <span class="keyword">happy</span>;<br />
-			<span class="placeholder"/><span class="comments">// they will get married soon.</span><br />
-			<span class="placeholder"/><span class="comments">// I wish they could be happy forever.</span><br />
-			<span class="placeholder"/>Today Is The Girl Birthday.<br />
-			<span class="comments">// the boy do not know to prepare what a gift for the girl. But ......</span><br />
-			<br>
-			<br>
-			The boy want to say:<br />
-			Happy birthday to you!<br />
-			<br />
-			Baby, I love you forever.<br />
-		</div>
-		<div id="loveHeart">
-			<canvas id="garden"></canvas>
-			<!-- <div id="wrap">
-			  <img src="me.jpg" border-radius = "60" width = "110"  height = "120"/>
-		    </div> -->
-			<div id="words">
-				<div id="messages">
-					亲爱的，这是我们相爱在一起的时光。
-					<div id="elapseClock"></div>
-				</div>
-				<div id="loveu">
-					生日快乐！爱你直到永远。<br/>
-					<div class="signature">- 赵远</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-
-<script type="text/javascript">
-var offsetX = $("#loveHeart").width() / 2;
-var offsetY = $("#loveHeart").height() / 2 - 55;
-var together = new Date();
-together.setFullYear(2013, 3, 3);
-together.setHours(14);
-together.setMinutes(0);
-together.setSeconds(0);
-together.setMilliseconds(0);
-
-if (!document.createElement('canvas').getContext) {
-	var msg = document.createElement("div");
-	msg.id = "errorMsg";
-	msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
-	document.body.appendChild(msg);
-	$("#code").css("display", "none")
-	$("#copyright").css("position", "absolute");
-	$("#copyright").css("bottom", "10px");
-	document.execCommand("stop");
-} else {
-	setTimeout(function () {
-		startHeartAnimation();
-	}, 5000);
-
-	timeElapse(together);
-	setInterval(function () {
-		timeElapse(together);
-	}, 500);
-
-	adjustCodePosition();
-	$("#code").typewriter();
-}
-</script>
-<!-- 代码结束 -->
-</body>
-</html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+ 
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title> New Document </title>
+  
+ </head>
+ 
+ 
+<!--URL跳转规则：-->
+<!--1.跳转格式：-->
+<!--http://m.tao.yangmi.com/pageName?params=a&..  OR  yangmi://m.tao.yangmi.com/pageName?params=a&..-->
+<!--跳转时，匹配host是否为m.tao.yangmi.com:-->
+<!--a. 如果YES,按规则取参数跳转，在跳转的过程中，找不到匹配的pageName,就直接以这个URL（若scheme不是HTTP或HTTPs替换为http）去跳转webview。-->
+<!--b.如果NO，就直接以这个URL去跳转webview。-->
+ 
+ 
+ <body>
+ 
+ 	<h2>yangmi内部跳转测试</h2>
+    
+    
+    
+    <p><a>*************************************http://********************************************</a></p>
+ 
+ 
+    <p><a href="http://m.tao.yangmi.com/Home?">首页</a></p>
+ 
+    <p><a href="http://m.tao.yangmi.com/PickFood?">挑食</a></p>
+ 
+    <p><a href="http://m.tao.yangmi.com/Cart?">购物车</a></p>
+ 
+    <p><a href="http://m.tao.yangmi.com/Me?">我的</a></p>
+ 
+    <p><a href="http://m.tao.yangmi.com/Login?">登录</a></p>
+ 
+    <p><a href="http://m.tao.yangmi.com/PersonalInfo?">用户编辑</a></p>
+	
+	<p><a href="http://m.tao.yangmi.com/MyAddress">我的地址</a></p>
+	
+	<p><a href="http://m.tao.yangmi.com/CreditsHistory">蜜豆记录</a></p>
+	
+    <p><a href="http://wap.baidu.com">网页详情1 直接给一个网址</a></p>
+	
+	<p><a href="http://m.tao.yangmi.com/WebDetail?url=http://wap.baidu.com">网页详情2 将网址放在参数里面给过来</a></p>
+	
+	<p><a href="http://m.tao.yangmi.com/web_system?url=http://wap.baidu.com">网页详情 跳转到系统浏览器 打开网址</a></p>
+	
+	<p><a href="http://m.tao.yangmi.com/PostDetail??post_id=41&title=%E4%BB%8A%E6%9C%9D%E6%9C%89%E9%85%92%E4%BB%8A%E6%9C%9D%E9%86%89">富文本详情</a></p>
+	
+	<p><a href="http://m.tao.yangmi.com/ProductDetail?product_id=22702&mart_code=MOBO&item_id=336">商品详情</a></p>
+ 
+	<p><a href="http://m.tao.yangmi.com/MyFavorlist">我的喜欢列表</a></p>
+	
+	<p><a href="http://m.tao.yangmi.com/BrowsHistory">我的浏览历史列表</a></p>
+	
+    <p><a href="http://m.tao.yangmi.com/MyOrder?order_type=1">我的订单</a></p>
+	
+	<p><a href="http://m.tao.yangmi.com/OrderDetail?order_id=103215000033">订单详情</a></p>
+	
+	<p><a href="http://m.tao.yangmi.com/CreditsProductList?topic_id=10">蜜豆商品列表</a></p>
+	
+	<p><a href="http://m.tao.yangmi.com/Search">搜索页面进入</a></p>
+ 
+    <p><a href="http://m.tao.yangmi.com/Search?keyword=&tagids=2552&title=车厘子">进入搜索结果</a></p>
+	
+	<p><a href="http://m.tao.yangmi.com/TagToProductList?tag_id=118&tag_title=%E7%BE%8E%E9%A3%9F%E5%9C%B0%E7%90%86">Tag下商品（当前用在美食地理里面）</a></p>
+ 
+	<p><a href="http://m.tao.yangmi.com/TopicProductList?topic_id=50">topic商品列表</a></p>
+	
+	<p><a href="http://m.tao.yangmi.com/TopicList">topic列表</a></p>
+ 
+ 
+    <p><a>*************************************htts://********************************************</a></p>
+ 
+ 
+    <p><a href="https://m.tao.yangmi.com/Home?">首页</a></p>
+ 
+    <p><a href="https://m.tao.yangmi.com/PickFood?">挑食</a></p>
+ 
+    <p><a href="https://m.tao.yangmi.com/Cart?">购物车</a></p>
+ 
+    <p><a href="https://m.tao.yangmi.com/Me?">我的</a></p>
+ 
+    <p><a href="https://m.tao.yangmi.com/Login?">登录</a></p>
+ 
+    <p><a href="https://m.tao.yangmi.com/PersonalInfo?">用户编辑</a></p>
+ 
+    <p><a href="https://m.tao.yangmi.com/MyAddress">我的地址</a></p>
+ 
+    <p><a href="https://m.tao.yangmi.com/CreditsHistory">蜜豆记录</a></p>
+ 
+    <p><a href="https://wap.baidu.com">网页详情1 直接给一个网址</a></p>
+ 
+    <p><a href="https://m.tao.yangmi.com/WebDetail?url=http://wap.baidu.com">网页详情2 将网址放在参数里面给过来</a></p>
+ 
+    <p><a href="https://m.tao.yangmi.com/web_system?url=http://wap.baidu.com">网页详情 跳转到系统浏览器 打开网址</a></p>
+ 
+    <p><a href="https://m.tao.yangmi.com/PostDetail??post_id=41&title=%E4%BB%8A%E6%9C%9D%E6%9C%89%E9%85%92%E4%BB%8A%E6%9C%9D%E9%86%89">富文本详情</a></p>
+ 
+    <p><a href="https://m.tao.yangmi.com/ProductDetail?product_id=22702&mart_code=MOBO&item_id=336">商品详情</a></p>
+ 
+    <p><a href="https://m.tao.yangmi.com/MyFavorlist">我的喜欢列表</a></p>
+ 
+    <p><a href="https://m.tao.yangmi.com/BrowsHistory">我的浏览历史列表</a></p>
+ 
+    <p><a href="https://m.tao.yangmi.com/MyOrder?order_type=1">我的订单</a></p>
+ 
+    <p><a href="https://m.tao.yangmi.com/OrderDetail?order_id=103215000033">订单详情</a></p>
+ 
+    <p><a href="https://m.tao.yangmi.com/CreditsProductList?topic_id=10">蜜豆商品列表</a></p>
+ 
+    <p><a href="https://m.tao.yangmi.com/Search">搜索页面进入</a></p>
+ 
+    <p><a href="https://m.tao.yangmi.com/Search?keyword=&tagids=2552&title=车厘子">进入搜索结果</a></p>
+ 
+    <p><a href="https://m.tao.yangmi.com/TagToProductList?tag_id=118&tag_title=%E7%BE%8E%E9%A3%9F%E5%9C%B0%E7%90%86">Tag下商品（当前用在美食地理里面）</a></p>
+ 
+    <p><a href="https://m.tao.yangmi.com/TopicProductList?topic_id=50">topic商品列表</a></p>
+ 
+    <p><a href="https://m.tao.yangmi.com/TopicList">topic列表</a></p>
+ 
+ 
+    <p><a>*************************************yangmi://********************************************</a></p>
+ 
+    <p><a href="migou://m.tao.yangmi.com/Home?">首页</a></p>
+ 
+    <p><a href="migou://m.tao.yangmi.com/PickFood?">挑食</a></p>
+ 
+    <p><a href="migou://m.tao.yangmi.com/Cart?">购物车</a></p>
+ 
+    <p><a href="migou://m.tao.yangmi.com/Me?">我的</a></p>
+ 
+    <p><a href="migou://m.tao.yangmi.com/Login?">登录</a></p>
+ 
+    <p><a href="migou://m.tao.yangmi.com/PersonalInfo?">用户编辑</a></p>
+ 
+    <p><a href="migou://m.tao.yangmi.com/MyAddress">我的地址</a></p>
+ 
+    <p><a href="migou://m.tao.yangmi.com/CreditsHistory">蜜豆记录</a></p>
+ 
+    <p><a href="migou://wap.baidu.com">网页详情1 直接给一个网址</a></p>
+ 
+    <p><a href="migou://m.tao.yangmi.com/WebDetail?url=http://wap.baidu.com">网页详情2 将网址放在参数里面给过来</a></p>
+ 
+    <p><a href="migou://m.tao.yangmi.com/web_system?url=http://wap.baidu.com">网页详情 跳转到系统浏览器 打开网址</a></p>
+ 
+    <p><a href="migou://m.tao.yangmi.com/PostDetail??post_id=41&title=%E4%BB%8A%E6%9C%9D%E6%9C%89%E9%85%92%E4%BB%8A%E6%9C%9D%E9%86%89">富文本详情</a></p>
+ 
+    <p><a href="migou://m.tao.yangmi.com/ProductDetail?product_id=22702&mart_code=MOBO&item_id=336">商品详情</a></p>
+ 
+    <p><a href="migou://m.tao.yangmi.com/MyFavorlist">我的喜欢列表</a></p>
+ 
+    <p><a href="migou://m.tao.yangmi.com/BrowsHistory">我的浏览历史列表</a></p>
+ 
+    <p><a href="migou://m.tao.yangmi.com/MyOrder?order_type=1">我的订单</a></p>
+ 
+    <p><a href="migou://m.tao.yangmi.com/OrderDetail?order_id=103215000033">订单详情</a></p>
+ 
+    <p><a href="migou://m.tao.yangmi.com/CreditsProductList?topic_id=10">蜜豆商品列表</a></p>
+ 
+    <p><a href="migou://m.tao.yangmi.com/Search">搜索页面进入</a></p>
+ 
+    <p><a href="migou://m.tao.yangmi.com/Search?keyword=&tagids=2552&title=车厘子">进入搜索结果</a></p>
+ 
+    <p><a href="migou://m.tao.yangmi.com/TagToProductList?tag_id=118&tag_title=%E7%BE%8E%E9%A3%9F%E5%9C%B0%E7%90%86">Tag下商品（当前用在美食地理里面）</a></p>
+ 
+    <p><a href="migou://m.tao.yangmi.com/TopicProductList?topic_id=50">topic商品列表</a></p>
+ 
+    <p><a href="migou://m.tao.yangmi.com/TopicList">topic列表</a></p>
+ 
+ 
+ 
+    <p><a>*************************************异常测试测试********************************************</a></p>
+ 
+ 
+ 
+    <p><a href="http://m.tao.yangmi.com/nima?">未知页面测试http://m.tao.yangmi.com/nima?</a></p>
+    <p><a href="https://m.tao.yangmi.com/nima?">未知页面测试https://m.tao.yangmi.com/nima?</a></p>
+    <p><a href="migou://m.tao.yangmi.com/nima?">未知页面测试yangmi://m.tao.yangmi.com/nima?</a></p>
+ 
+ 
+    <p><a href="http://m.tao.yangmi.com">不带页面参数测试http://m.tao.yangmi.com</a></p>
+    <p><a href="https://m.tao.yangmi.com">不带页面测试https://m.tao.yangmi.com</a></p>
+    <p><a href="migou://m.tao.yangmi.com">不带页面测试yangmi://m.tao.yangmi.com</a></p>
+ 
+ 
+    <p><a href="http://asdasdasdasdasd?">未知页面测试http://asdasdasdasdasd?</a></p>
+    <p><a href="https://asdasdasdasdasd?">未知页面测试https://asdasdasdasdasd?</a></p>
+    <p><a href="migou://asdasdasdasdasd?">未知页面测试yangmi://asdasdasdasdasd?</a></p>
+ 
+    <p><a href="migou://wap.baidu.com?">未知页面测试yangmi://wap.baidu.com?</a></p>
+ 
+	
+</body></html>
